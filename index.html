@@ -5,99 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rescataditos - Lomas del Mirador</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 <body>
   <header class="header">
-    <div class="logo-container">
-      <img src="logo.webp" alt="Logo Rescataditos">
+    <div class="header-content">
+      <img src="logo.png" alt="Logo Rescataditos" class="logo">
+      <nav class="desktop-menu">
+        <ul>
+          <li><a href="#quienes-somos">Quiénes Somos</a></li>
+          <li><a href="#historias">Historias</a></li>
+          <li><a href="#colaborar">Colaborar</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="navbar">
-      <button class="menu-toggle">☰</button>
-      <ul class="menu">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#quienes-somos">Quiénes Somos</a></li>
-        <li><a href="#adopciones">Adopciones</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
   </header>
-  <main>
-    <section id="inicio" class="section inicio">
-      <h1>Rescataditos</h1>
-      <p>Rescatamos perros y gatos para darles una segunda oportunidad.</p>
+
+  <main class="content">
+    <section id="donaciones" class="section donaciones">
+      <h2 class="highlight">Formá parte, suscribite</h2>
+      <div class="donation-buttons">
+        <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084944b0eac019452aad4ce050b" name="MP-payButton" class="blue-ar-l-rn-none">Donación mensual - $5000</a>
+        <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084944b0ebd019452aa84fd0498" name="MP-payButton" class="blue-ar-l-rn-none">Donación mensual - $10000</a>
+      </div>
     </section>
     <section id="quienes-somos" class="section quienes-somos">
       <h2>Quiénes Somos</h2>
-      <p>Somos un grupo de voluntarios comprometidos con el bienestar animal.</p>
+      <p>Somos un grupo de voluntarios comprometidos con el bienestar animal. Rescatamos, cuidamos y buscamos hogares para perros y gatos en situación de vulnerabilidad.</p>
     </section>
-    <section id="adopciones" class="section adopciones">
-      <h2>Adopciones</h2>
-      <p>Conoce a nuestros animales en adopción.</p>
-      <!-- Galería de animales -->
-    </section>
-    <section id="contacto" class="section contacto">
-      <h2>Contacto</h2>
-      <form>
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-    <a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084944b0eac019452aad4ce050b" name="MP-payButton" class='blue-ar-l-rn-none'>Aporte mensual - 5000 pesos</a>
-<script type="text/javascript">
-   (function() {
-      function $MPC_load() {
-         window.$MPC_loaded !== true && (function() {
-         var s = document.createElement("script");
-         s.type = "text/javascript";
-         s.async = true;
-         s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
-         var x = document.getElementsByTagName('script')[0];
-         x.parentNode.insertBefore(s, x);
-         window.$MPC_loaded = true;
-      })();
-   }
-   window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
-   })();
-  /*
-        // to receive event with message when closing modal from congrants back to site
-        function $MPC_message(event) {
-          // onclose modal ->CALLBACK FUNCTION
-         // !!!!!!!!FUNCTION_CALLBACK HERE Received message: {event.data} preapproval_id !!!!!!!!
-        }
-        window.$MPC_loaded !== true ? (window.addEventListener("message", $MPC_message)) : null; 
-        */
-</script>
-<a href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c938084944b0ebd019452aa84fd0498" name="MP-payButton" class='blue-ar-l-rn-none'>Aporte mensual - 100000 pesos</a>
-<script type="text/javascript">
-   (function() {
-      function $MPC_load() {
-         window.$MPC_loaded !== true && (function() {
-         var s = document.createElement("script");
-         s.type = "text/javascript";
-         s.async = true;
-         s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
-         var x = document.getElementsByTagName('script')[0];
-         x.parentNode.insertBefore(s, x);
-         window.$MPC_loaded = true;
-      })();
-   }
-   window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
-   })();
-  /*
-        // to receive event with message when closing modal from congrants back to site
-        function $MPC_message(event) {
-          // onclose modal ->CALLBACK FUNCTION
-         // !!!!!!!!FUNCTION_CALLBACK HERE Received message: {event.data} preapproval_id !!!!!!!!
-        }
-        window.$MPC_loaded !== true ? (window.addEventListener("message", $MPC_message)) : null; 
-        */
-</script>
   </main>
+
   <footer class="footer">
     <p>&copy; 2025 Rescataditos - Lomas del Mirador</p>
   </footer>
