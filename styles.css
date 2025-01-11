@@ -1,0 +1,92 @@
+:root {
+    --naranja: #F57C00;
+    --turquesa: #00ACC1;
+    --blanco: #FFFFFF;
+    --rojo: #FF5722;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--blanco);
+    color: #333;
+  }
+  
+  .header {
+    background-color: var(--naranja);
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .logo-container img {
+    max-width: 150px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .menu-toggle {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: var(--blanco);
+  }
+  
+  .section {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .inicio {
+    background-color: var(--turquesa);
+    color: var(--blanco);
+  }
+  
+  .quienes-somos {
+    background-color: var(--blanco);
+    color: var(--naranja);
+  }
+  
+  .adopciones {
+    background-color: var(--naranja);
+    color: var(--blanco);
+  }
+  
+  .contacto {
+    background-color: var(--turquesa);
+    color: var(--blanco);
+  }
+  
+  form input, form textarea {
+    display: block;
+    width: 90%;
+    margin: 0.5rem auto;
+    padding: 0.5rem;
+    border: 1px solid var(--naranja);
+    border-radius: 5px;
+  }
+  
+  form button {
+    background-color: var(--rojo);
+    color: var(--blanco);
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 1rem;
+    text-align: center;
+  }
+  
